@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    implementation group: 'org.ow2.asm', name: 'asm', version: '9.2'
+//    implementation group: 'org.ow2.asm', name: 'asm-commons', version: '9.2'
+
+    implementation files("dynamic/")
+    implementation files("trickle/")
+}
